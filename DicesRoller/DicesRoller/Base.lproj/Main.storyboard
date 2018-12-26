@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DicesRoller" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoheganSunLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xwO-vR-vKY">
+                                <rect key="frame" x="67" y="40" width="250" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="FO5-82-9KI"/>
+                                    <constraint firstAttribute="width" constant="250" id="zAa-m0-obE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BbS-7K-8Wz">
+                                <rect key="frame" x="30" y="335" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="dMr-9a-6ju"/>
+                                    <constraint firstAttribute="height" constant="125" id="jIl-xP-jEr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xEL-A5-7QV">
+                                <rect key="frame" x="220" y="335" width="125" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="o1R-jA-QWg"/>
+                                    <constraint firstAttribute="height" constant="125" id="zjc-1C-FD3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABz-ot-xuX">
+                                <rect key="frame" x="153" y="499" width="69" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="shv-9U-ca3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="ROLL">
+                                    <color key="titleColor" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dicePressedaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dPe-fX-HfS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xwO-vR-vKY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0kd-VH-3RN"/>
+                            <constraint firstItem="BbS-7K-8Wz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4BW-VG-KJL"/>
+                            <constraint firstItem="xwO-vR-vKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="EYh-Wc-gqI"/>
+                            <constraint firstItem="xEL-A5-7QV" firstAttribute="leading" secondItem="BbS-7K-8Wz" secondAttribute="trailing" constant="65" id="M0P-5H-d5q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xEL-A5-7QV" secondAttribute="trailing" constant="30" id="UgA-F9-UGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ABz-ot-xuX" secondAttribute="trailing" constant="153" id="gJJ-j0-1Un"/>
+                            <constraint firstItem="ABz-ot-xuX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="gUG-SO-D6e"/>
+                            <constraint firstItem="xEL-A5-7QV" firstAttribute="top" secondItem="xwO-vR-vKY" secondAttribute="bottom" constant="95" id="jOh-Yt-Xfi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ABz-ot-xuX" secondAttribute="bottom" constant="98" id="mO5-SH-Bdw"/>
+                            <constraint firstItem="BbS-7K-8Wz" firstAttribute="top" secondItem="xwO-vR-vKY" secondAttribute="bottom" constant="95" id="nR0-eO-XAG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="diceImageView1" destination="BbS-7K-8Wz" id="WCu-gU-lXs"/>
+                        <outlet property="diceImageView2" destination="xEL-A5-7QV" id="f93-eS-seA"/>
+                        <outlet property="logo1" destination="xwO-vR-vKY" id="WK3-38-L41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MoheganSunLogo" width="180" height="180"/>
+    </resources>
+</document>
